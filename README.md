@@ -25,3 +25,15 @@ env\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## Create Contact class
+
+- Attributes:
+  - First name (str)
+  - Last name (str)
+  - Phone number (str)
+
+- Methods:
+  - add_contact (New entries with unique name)
+  - edit_contact
+  - delete_contact
