@@ -14,6 +14,12 @@ python3 -m venv env
 source env/bin/activate
 ```
 
+## Activate for Windows
+
+```bash
+env\Scripts\activate
+```
+
 ## Install requirements
 
 ```bash
