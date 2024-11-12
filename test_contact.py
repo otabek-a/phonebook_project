@@ -10,8 +10,15 @@ def test_contact():
 
 def test_check_phone_number():
     contact = Contact('Zarif','Naxalov','+998 93 123 45 67')
-    assert contact.check_phone_number('+998 93 123 45 67')==True,'Phone number is not valid'
-    assert contact.check_phone_number('+998 93 123 45 6')==False,'Phone number is not valid'
+    assert contact.check_phone_number()==True,'Phone number is not valid'
+    assert contact.check_phone_number()==False,'Phone number is not valid'
+    assert contact.phone_number[0] == '+','Phone number is not valid'
+    assert contact.phone_number.count(' ') == 4,'Phone number is not valid'
+    assert contact.phone_number[4]==' ','Phone number is not valid'
+    assert contact.phone_number[7]==' ','Phone number is not valid'
+    
+
+
 
 def test_check_name():
     contact = Contact('Zarif','Naxalov','+998 93 123 45 67')
