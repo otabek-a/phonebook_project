@@ -7,13 +7,12 @@ class Contact:
       if self.first_name[0].isupper() and self.last_name[0].isupper():
          return True
       return False
-   def check_phone_number(self,name=False):
-      self.name=name
-
-      indeks=len('+998 93 123 45 67')
-      if len(self.name)==indeks:
-         return True
-      return False
+   def check_phone_number(self):
+        if len(self.phone_number) == 17 :
+            if self.phone_number[0] == '+' and self.phone_number.count(' ') == 4 and self.phone_number[4] == ' ' and self.phone_number[7] == ' ':
+                return True
+        else :
+            return False
    
 
 
